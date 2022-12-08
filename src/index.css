@@ -1,0 +1,205 @@
+html {
+  font-size: 72.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+
+img {
+  width: 100%;
+}
+
+input {
+  margin: 5px;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+p {
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("http://67.media.tumblr.com/778df6bd4bbcf516166ff7a3eecfe77c/tumblr_oge0um72n51sikueao1_r1_500.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  height: 100vh;
+  align-items: center;
+}
+
+.wetherCard {
+  border: 2px solid rgb(124, 124, 124);
+  padding: 0 2rem 2rem 2rem;
+  background-color: rgba(253, 240, 213, 0.5);
+  text-align: center;
+  border-radius: 25px;  
+  
+}
+
+.search {
+  position: relative;
+}
+
+.weatherCard-button1 {
+  display: flex;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  position: absolute;
+  left: 165px;
+  top: 6px;
+  background-color: #669bbc;
+}
+
+.weatherCard-button1:hover {
+  background-color: rgba(0, 48, 73, 0.2);
+  color: white;
+}
+
+
+.weatherCard-body > ul {
+  list-style: none;
+  width: 130px;
+  margin: auto;
+  padding: 0;
+}
+
+.weatherCard-body > ul > li {
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.wetherCard-img {  
+  animation: 10s infinite flotar;
+}
+
+@keyframes flotar {
+  0%{transform: translate(0,0px);}
+  20%{transform: translate(0,-3px);}
+  40%{transform: translate(0,3px);}
+  60%{transform: translate(0,-3px);}
+  80%{transform: translate(0,3px);}
+  100%{transform: translate(0,0px);}
+}
+
+.temp {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.weatherCard-button {
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #8a8a8a7c;
+  transition: 0.3s background-color;
+}
+
+.weatherCard-button:hover {
+  background-color: rgba(0, 48, 73, 0.5);
+  color: white;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
